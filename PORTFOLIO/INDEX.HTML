@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Resume - B.Tech Student</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    .about {
+      width: 100%;
+      height: 100%;
+      min-height: 100vh;
+      background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://wallpapercave.com/wp/wp1867319.jpg);
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      color: #eee;
+      padding: 5cm 20px 20px;
+    }
+    .Skills {
+      width: 100%;
+      height: 100%;
+      min-height: 100vh;
+      background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://wallpapercave.com/wp/wp1867319.jpg);
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      color: #eee;
+      padding: 5cm 20px 20px;
+    }
+    .Skills h1,
+    .Skills h2 {
+      font-size: 60px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: lightgreen;
+    }
+    .nav-list {
+      position: fixed;
+      z-index: 999;
+    }
+    .hidden {
+      display: none;
+      //position : fixed;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="hero">
+    <div class="main-width">
+      <header>
+        <div class="logo">
+          <i class="fa-solid fa-star"></i>
+        </div>
+
+        <nav class="hidden">
+          <div class="hamb">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <ul class="nav-list">
+            <li><a href="#container">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li class="btn"><a href="ar.html">Download CV</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="container" id="container">
+        <div class="hero-text" id = "hero-text">
+          <h3>Hi, There</h3>
+          <h1>I Am <span class="input"></span></h1>
+          <p>about you</p>
+          <div class="social">
+            <a href="https://www.instagram.com/_s._.t._.r_"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://wa.me/7075682962"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href="mailto:your.batman309092@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            <a href=""><i class="fa-solid fa-phone"></i></a>
+          </div>
+          <button type="button">More About Me</button>
+        </div>
+        <div class="bottom">
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    I am a passionate B.Tech student specializing in Computer Science with a keen interest in Data Science and Artificial Intelligence.
+    I have a strong foundation in Python, Solidity, and blockchain technology.
+    I enjoy working on projects that involve deep learning, data analysis, and data visualization.
+    My goal is to leverage my skills to solve real-world problems and contribute to the development of cutting-edge technologies.
+
+    <h2>Education</h2>
+    <ul>
+      <li>B.Tech in Computer Science</li>
+      <li>Institution: Amrita Amritapuri</li>
+      <li>Major: Artificial Intelligence S2</li>
+    </ul>
+    <h1>Honors and Achievements</h1>
+    <ul>
+      <li>Player for under 19 men Hockey tournament Inter District Andhra Pradesh, Kurnool 2018</li>
+      <li>Player for under 17 men Hockey tournament Inter District Andhra Pradesh, Kurnool 2019</li>
+    </ul>
+  </section>
+  <section class="Skills" id="Skills">
+    <h1>Skills</h1>
+    <ul class="skills-list">
+      <li><img src="python.png" height="40px" width="40px" alt="Python">PYTHON PROGRAMMER</li>
+      <li><img src="solidity.webp" height="40px" width="40px" alt="Solidity and blockchain">SOLIDITY DEVELOPER</li>
+      <li><img src="deeplearning.png" height="40px" width="40px" alt="Deep Learning">DEEP LEARNING AND DATA ANALYSIS</li>
+      <li><img src="C.png" height="40px" width="40px" alt="C language">C LANGUAGE</li>
+      <li><img src="blockchain.webp" height="40px" width="40px" alt="Blockchain developer">BLOCKCHAIN DEVELOPER</li>
+    </ul>
+  </section>
+  <script type="text/javascript" src="js/scrip.js"></script>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script>
+    document.querySelector('.logo').addEventListener('click', function () {
+      document.querySelector('nav').classList.toggle('hidden');
+    });
+
+    var typed = new Typed(".input", {
+      strings: ["Tharun Raju", "Student", "Web Developer"],
+      typeSpeed: 70,
+      backspace: 60,
+      loop: true
+    });
+  </script>
+</body>
+</html>
